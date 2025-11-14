@@ -1,5 +1,5 @@
 <!-- Header area -->
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!-- /Header area -->
 <title>Design Studio &#8211; Noize Jeans Ltd.</title>
 <!-- Home Slider -->
@@ -16,16 +16,16 @@
     <!-- Carousel content -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/Dhaka.jpg" class="d-block w-100" alt="Slider Image 1">
+        <img src="../assets/images/Dhaka.jpg" class="d-block w-100" alt="Slider Image 1">
       </div>
       <div class="carousel-item">
-        <img src="images/Dubai.jpg" class="d-block w-100" alt="Slider Image 2">
+        <img src="../assets/images/Dubai.jpg" class="d-block w-100" alt="Slider Image 2">
       </div>
       <div class="carousel-item">
-        <img src="images/Barcelona3.jpg" class="d-block w-100" alt="Slider Image 3">
+        <img src="../assets/images/Barcelona3.jpg" class="d-block w-100" alt="Slider Image 3">
       </div>
       <div class="carousel-item">
-        <img src="images/USAA-1.jpg" class="d-block w-100" alt="Slider Image 4">
+        <img src="../assets/images/USAA-1.jpg" class="d-block w-100" alt="Slider Image 4">
       </div>
     </div>
     <!-- Carousel controls -->
@@ -46,8 +46,8 @@
       <!-- Add border styling to the image container -->
       <div style="padding: 10px;">
       
-        <img src="images/ds1.jpg" alt="Picture" class="img-fluid">
-		<img src="images/ds2.jpg" alt="Picture-2" class="img-fluid"style="margin-top: 30px;">
+        <img src="../assets/images/ds1.jpg" alt="Picture" class="img-fluid">
+		<img src="../assets/images/ds2.jpg" alt="Picture-2" class="img-fluid"style="margin-top: 30px;">
      
       </div>
     </div>
@@ -75,16 +75,16 @@
 <section class="brand-logos">
   <div class="container-fluid">
     <div class="brand-logo-row">
-      <img src="images/primark.jpg" alt="Brand Logo 1">
-      <img src="images/pimkie.jpg" alt="Brand Logo 2">
-      <img src="images/new-york.jpg" alt="Brand Logo 3">
-      <img src="images/spring.jpg" alt="spring">
-      <img src="images/zara.jpg" alt="zara">
-      <img src="images/bershka.jpg" alt="Barshka">
-      <img src="images/only.jpg" alt="Only">
-      <img src="images/mango.jpg" alt="Mango">
-      <img src="images/pull-bear.jpg" alt="Pull&Bear">
-      <img src="images/jay-jay.jpg" alt="Jay Jay">
+      <img src="../assets/images/primark.jpg" alt="Brand Logo 1">
+      <img src="../assets/images/pimkie.jpg" alt="Brand Logo 2">
+      <img src="../assets/images/new-york.jpg" alt="Brand Logo 3">
+      <img src="../assets/images/spring.jpg" alt="spring">
+      <img src="../assets/images/zara.jpg" alt="zara">
+      <img src="../assets/images/bershka.jpg" alt="Barshka">
+      <img src="../assets/images/only.jpg" alt="Only">
+      <img src="../assets/images/mango.jpg" alt="Mango">
+      <img src="../assets/images/pull-bear.jpg" alt="Pull&Bear">
+      <img src="../assets/images/jay-jay.jpg" alt="Jay Jay">
     </div>
   </div>
 </section>
@@ -92,5 +92,5 @@
 
 
 <!-- Footer area -->
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!-- /Footer area -->

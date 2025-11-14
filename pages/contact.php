@@ -1,5 +1,5 @@
 <!-- Header area -->
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!-- /Header area -->
 
 
@@ -10,7 +10,7 @@
 <section class="container-fluid" style="margin-bottom: 50px;">
   <div class="row">
     <div class="col-sm-12">
-    <img src="images/find-us.jpg" alt="Vertical Production" class="img-fluid"  style="width: 100%; height: auto;" />
+    <img src="../assets/images/find-us.jpg" alt="Vertical Production" class="img-fluid"  style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
@@ -88,5 +88,5 @@
     </div>
 
     <!--Footer area-->
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!--/Footer area-->

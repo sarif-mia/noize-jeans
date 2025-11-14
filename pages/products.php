@@ -1,12 +1,12 @@
 <!--Header area--> 
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!--/Header area-->
 
 <!-- product page banner -->
 <section class="container-fluid" style="margin-bottom: 50px;">
   <div class="row">
     <div class="col-sm-12">
-      <img src="images/products-3.jpg" alt="Vertical Production" class="img-fluid" style="width: 100%; height: auto;" />
+      <img src="../assets/images/products-3.jpg" alt="Vertical Production" class="img-fluid" style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
@@ -39,62 +39,62 @@
       <div class="row">
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/1.png" alt="Latest Collection">
+              <img class="card-img" src="../assets/images/latest/1.png" alt="Latest Collection">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/2.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/2.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/3.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/3.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/4.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/4.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/5.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/5.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/6.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/6.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/7.png" alt="">
+              <img class="card-img" src="../assets/images/latest/7.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/8.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/8.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/9.png" alt="">
+              <img class="card-img" src="../assets/images/latest/9.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/10.png" alt="">
+              <img class="card-img" src="../assets/images/latest/10.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/11.jpg" alt="">
+              <img class="card-img" src="../assets/images/latest/11.jpg" alt="">
           </div>
         </div>
 		 <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/latest/12.png" alt="">
+              <img class="card-img" src="../assets/images/latest/12.png" alt="">
           </div>
         </div>
       </div>
@@ -105,62 +105,62 @@
       <div class="row">
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/1.jpg" alt="MEN">
+              <img class="card-img" src="../assets/images/men/1.jpg" alt="MEN">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/2.jpg" alt="">
+              <img class="card-img" src="../assets/images/men/2.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/3.png" alt="">
+              <img class="card-img" src="../assets/images/men/3.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/4.png" alt="">
+              <img class="card-img" src="../assets/images/men/4.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/5.png" alt="">
+              <img class="card-img" src="../assets/images/men/5.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/6.png" alt="">
+              <img class="card-img" src="../assets/images/men/6.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/7.png" alt="">
+              <img class="card-img" src="../assets/images/men/7.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/8.jpg" alt="">
+              <img class="card-img" src="../assets/images/men/8.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/9.jpg" alt="">
+              <img class="card-img" src="../assets/images/men/9.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/10.jpg" alt="">
+              <img class="card-img" src="../assets/images/men/10.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/11.png" alt="">
+              <img class="card-img" src="../assets/images/men/11.png" alt="">
           </div>
         </div>
          <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/men/12.png" alt="">
+              <img class="card-img" src="../assets/images/men/12.png" alt="">
           </div>
 		 
         </div>
@@ -172,62 +172,62 @@
       <div class="row">
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/1.png" alt="Women">
+              <img class="card-img" src="../assets/images/women/1.png" alt="Women">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/2.png" alt="">
+              <img class="card-img" src="../assets/images/women/2.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/3.png" alt="">
+              <img class="card-img" src="../assets/images/women/3.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/4.png" alt="">
+              <img class="card-img" src="../assets/images/women/4.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/5.png" alt="">
+              <img class="card-img" src="../assets/images/women/5.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/6.jpg" alt="">
+              <img class="card-img" src="../assets/images/women/6.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/7.jpg" alt="">
+              <img class="card-img" src="../assets/images/women/7.jpg" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/8.png" alt="">
+              <img class="card-img" src="../assets/images/women/8.png" alt="">
           </div>
         </div>
         <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/9.jpg" alt="">
+              <img class="card-img" src="../assets/images/women/9.jpg" alt="">
           </div>
         </div>
 		 <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/10.png" alt="">
+              <img class="card-img" src="../assets/images/women/10.png" alt="">
           </div>
         </div>
 		 <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/11.png" alt="">
+              <img class="card-img" src="../assets/images/women/11.png" alt="">
           </div>
         </div>
 		 <div class="col-md-2">
           <div class="Portfolio">
-              <img class="card-img" src="images/women/12.png" alt="">
+              <img class="card-img" src="../assets/images/women/12.png" alt="">
           </div>
         </div>
       </div>
@@ -249,5 +249,5 @@
 <br>
 
 <!-- Footer area --> 
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!-- /Footer area -->

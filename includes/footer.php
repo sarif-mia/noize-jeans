@@ -13,13 +13,13 @@
 <section class="container-fluide ">
   <div class="row">
     <div class="col-sm-4 image-with-shadow" style="padding-top: 50px";>
-      <img src="images/complaince-1.jpg" alt="Image 1" class="img-fluid">
+      <img src="<?php echo isset($base_path) ? $base_path : '../'; ?>assets/images/complaince-1.jpg" alt="Image 1" class="img-fluid">
     </div>
     <div class="col-sm-4 second-image">
-      <img src="images/logo.png" alt="Image 2" class="img-fluid">
+      <img src="<?php echo isset($base_path) ? $base_path : '../'; ?>assets/images/logo.png" alt="Image 2" class="img-fluid">
     </div>
     <div class="col-sm-4 image-with-shadow">
-      <img src="images/complaince-2.jpg" alt="Image 3" class="img-fluid">
+      <img src="<?php echo isset($base_path) ? $base_path : '../'; ?>assets/images/complaince-2.jpg" alt="Image 3" class="img-fluid">
     </div>
   </div>
 </section>
@@ -41,7 +41,7 @@
 
       <!-- Company Logo (Middle) -->
       <div class="col-md-4 text-center">
-        <img src="images/footer-logo.png" alt="Company Logo" width="auto" style="margin-top: 65px; padding-left:30px;">
+        <img src="<?php echo isset($base_path) ? $base_path : '../'; ?>assets/images/footer-logo.png" alt="Company Logo" width="auto" style="margin-top: 65px; padding-left:30px;">
       </div>
 
       <!-- Company Phone Number (Right) -->

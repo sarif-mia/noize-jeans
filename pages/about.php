@@ -1,11 +1,11 @@
 <!--Header area-->
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!--/Header area-->
 <title>About Us &#8211; Noize Jeans Ltd.</title>
 <section class="container-fluid" style="margin-bottom: 50px;">
   <div class="row">
     <div class="col-sm-12">
-      <img src="images/about-banner-33.jpg" class="img-fluid" alt="Banner Image"  style="width: 100%; height: auto;" />
+      <img src="../assets/images/about-banner-33.jpg" class="img-fluid" alt="Banner Image"  style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
@@ -15,7 +15,7 @@
     <div class="col-md-4 order-1 order-md-1">
       <!-- Column 1 content goes here -->
       <div class="image-wrapper">
-        <img src="images/anuragsir5.jpg" alt="Image" style="width: 100%; height: auto;">
+        <img src="../assets/images/anuragsir5.jpg" alt="Image" style="width: 100%; height: auto;">
       </div>
     </div>
     <div class="col-md-4 order-3 order-md-2">
@@ -42,7 +42,7 @@
     <div class="col-md-4 order-2 order-md-3">
       <!-- Column 3 content goes here -->
       <div class="image-wrapper">
-        <img src="images/manishsir.jpg" alt="Image" style="width: 100%; height: auto;">
+        <img src="../assets/images/manishsir.jpg" alt="Image" style="width: 100%; height: auto;">
       </div>
     </div>
   </div>
@@ -50,5 +50,5 @@
 
 
 <!--Footer area-->
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!--/Footer area-->

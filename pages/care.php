@@ -1,12 +1,12 @@
 <!--Header area-->
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!--/Header area-->
 <title>Noize Care &#8211; Noize Jeans Ltd.</title>
 
 <section class="container-fluid" style="margin-bottom: 50px;">
   <div class="row">
     <div class="col-sm-12">
-      <img src="images/we-care.jpg" class="img-fluid" alt="Noize Care"  style="width: 100%; height: auto;" />
+      <img src="../assets/images/we-care.jpg" class="img-fluid" alt="Noize Care"  style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
@@ -14,7 +14,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-6">
-      <img src="images/noize-care-1.jpg" alt="Picture" class="img-fluid">
+      <img src="../assets/images/noize-care-1.jpg" alt="Picture" class="img-fluid">
     </div>
     <div class="col-sm-6">
     <h1 class="blog-single-content">NOIZE CARE</h1><br>
@@ -30,5 +30,5 @@
 </div>
 
 <!--Footer area-->
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!--/Footer area-->

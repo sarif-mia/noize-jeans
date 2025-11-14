@@ -1,7 +1,7 @@
 
 
 <!--Header area-->
-<?php include('header.php'); ?>
+<?php $base_path = '../'; include('../includes/header.php'); ?>
 <!--/Header area-->
 
 
@@ -10,7 +10,7 @@
 <section class="container-fluid" style="margin-bottom: 50px;">
   <div class="row">
     <div class="col-sm-12">
-      <img src="images/vertical.jpg" alt="Vertical Production" class="img-fluid"  style="width: 100%; height: auto;" />
+      <img src="../assets/images/vertical.jpg" alt="Vertical Production" class="img-fluid"  style="width: 100%; height: auto;" />
     </div>
   </div>
 </section>
@@ -22,12 +22,12 @@
                 <div class="row">
                     <div class="col-sm-6 col-12">
                         <div style="border: 1px solid #ccc; padding: 5px;">
-                            <img src="images/pro11.jpg" alt="Image 1" class="img-fluid">
+                            <img src="../assets/images/pro11.jpg" alt="Image 1" class="img-fluid">
                         </div>
                     </div>
                     <div class="col-sm-6 col-12">
                         <div style="border: 1px solid #ccc; padding: 5px;">
-                            <img src="images/pro22.jpg" alt="Image 2" class="img-fluid">
+                            <img src="../assets/images/pro22.jpg" alt="Image 2" class="img-fluid">
                         </div>
                     </div>
                     <!-- 2nd row a video player -->
@@ -67,5 +67,5 @@
     </div>
 
 <!-- Footer area -->
-<?php include('footer.php'); ?>
+<?php include('../includes/footer.php'); ?>
 <!-- /Footer area -->
