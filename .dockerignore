@@ -1,0 +1,15 @@
+# VCS
+.git
+.gitignore
+
+# Node / Composer (if present)
+node_modules
+vendor
+composer.lock
+composer.json
+
+# Docker / misc
+Dockerfile
+docker-compose.yml
+.DS_Store
+Thumbs.db
