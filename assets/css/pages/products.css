@@ -10,6 +10,19 @@
 .nav.nav-pills .nav-link:hover { background: #333; }
 .nav.nav-pills .nav-link.active { background: #4caf50; }
 
+.product-cta {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 24px 0 32px;
+}
+
+.product-cta .btn {
+  padding: 12px 20px;
+}
+
 @keyframes winanim {
   0% { opacity: 0; transform: scale3d(.3, .3, .3); }
   50% { opacity: 1; }

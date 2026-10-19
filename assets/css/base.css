@@ -11,6 +11,7 @@ html,
 body { max-width: 100%; overflow-x: hidden; }
 body { color: var(--color-ink); font-family: "Lato", Arial, sans-serif; }
 img { max-width: 100%; }
+main { padding-top: 60px; }
 
 a:focus-visible,
 button:focus-visible,

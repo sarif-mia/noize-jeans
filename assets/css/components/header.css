@@ -1,12 +1,12 @@
 /* Shared site header and off-canvas navigation. */
-.site-header { align-items: center; background: #fff; display: flex; height: 60px; justify-content: center; }
+.site-header { align-items: center; background: #fff; display: flex; height: 60px; justify-content: center; left: 0; position: fixed; top: 0; width: 100%; z-index: 20; }
 .logo { align-items: center; display: flex; flex: 0 0 140px; height: 100%; justify-content: center; }
 .logo img { max-height: 100%; }
 .circ-logo { height: auto; width: 60px; }
-.hamburger-menu { position: relative; z-index: 10; }
+.hamburger-menu { position: static; }
 #menu__toggle { opacity: 0; position: absolute; }
 
-.menu__btn { cursor: pointer; height: 26px; left: 30px; position: fixed; top: 30px; width: 26px; z-index: 12; }
+.menu__btn { cursor: pointer; height: 26px; left: 30px; position: absolute; top: 30px; width: 26px; z-index: 12; }
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after { background-color: #616161; display: block; height: 3px; position: absolute; transition: transform .25s; width: 100%; }

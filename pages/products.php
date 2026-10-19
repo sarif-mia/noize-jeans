@@ -35,9 +35,10 @@ $collections = [
       </div>
     <?php endforeach; ?>
   </div>
-  <div class="row justify-content-center align-items-center mt-3">
-    <div class="col-auto"><a href="men" class="btn btn-primary">View More Men Products</a></div>
-    <div class="col-auto"><a href="women" class="btn btn-primary">View More Women Products</a></div>
+  <nav class="product-cta" aria-label="More product collections">
+    <a href="men" class="btn btn-primary">View More Men Products</a>
+    <a href="women" class="btn btn-primary">View More Women Products</a>
+  </nav>
   </div>
 </section>
 
