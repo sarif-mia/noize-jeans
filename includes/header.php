@@ -23,6 +23,7 @@ $asset = static fn (string $path): string => asset_url($path, $base_path);
   <link rel="stylesheet" href="<?= $asset('assets/css/style.css') ?>">
   <?= $page_head ?? '' ?>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script defer src="<?= $asset('assets/js/site.js') ?>"></script>
 </head>
 <body>
   <header class="site-header">
@@ -30,7 +31,7 @@ $asset = static fn (string $path): string => asset_url($path, $base_path);
       <span class="logo"><img src="<?= $asset('assets/images/logo.png') ?>" alt="Noize Jeans" class="circ-logo"><img src="<?= $asset('assets/images/logonew2.png') ?>" alt="" class="line-logo"></span>
     </a>
     <nav class="hamburger-menu" aria-label="Primary navigation">
-      <input id="menu__toggle" type="checkbox" aria-label="Toggle navigation menu">
+      <input id="menu__toggle" type="checkbox" aria-label="Toggle navigation menu" aria-expanded="false">
       <label class="menu__btn" for="menu__toggle" aria-hidden="true"><span></span></label>
       <ul class="menu__box">
         <li><a class="menu__item" href="<?= $asset('') ?>">Home</a></li>
@@ -44,6 +45,7 @@ $asset = static fn (string $path): string => asset_url($path, $base_path);
         <li class="menu__subitem"><a class="menu__item" href="<?= $asset('customer') ?>">Customer</a></li>
         <li class="menu__subitem"><a class="menu__item" href="<?= $asset('contact') ?>">Find Us</a></li>
       </ul>
+      <label class="menu__backdrop" for="menu__toggle" aria-label="Close navigation menu"></label>
     </nav>
   </header>
   <main>

@@ -70,6 +70,17 @@ php -S localhost:8080 router.php
 
 Open `http://localhost:8080` in your browser.
 
+### Contact form email
+
+The contact form uses PHP's `mail()` function. Configure a mail transport on the production server, then optionally set these environment variables:
+
+```bash
+NOIZE_CONTACT_TO=info@noizejeans.com
+NOIZE_CONTACT_FROM=noreply@your-domain.com
+```
+
+Without a configured mail transport, the form displays an error and provides the direct company email address.
+
 ## Features
 
 - Responsive design with Bootstrap 4

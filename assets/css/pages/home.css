@@ -1,5 +1,6 @@
 /* Homepage carousels, image cards, and partner logo strip. */
 .collection-image { overflow: hidden; transition: transform .3s; }
+.collection-image a { display: block; }
 .collection-image:hover { transform: scale(1.03); }
 .collection-image img { height: auto; padding-top: 30px; width: 100%; }
 
@@ -8,6 +9,47 @@
 .carousel-control-prev { background: var(--color-black); font-size: 2em; height: 50px; top: 50%; transform: translateY(-50%); width: 3.5%; z-index: 1; }
 .slide-box { display: flex; justify-content: space-between; }
 .slide-box img { margin-right: 5px; }
+
+/* Keep every Featured Products slide the same height to prevent layout jumps. */
+.featured-products-carousel {
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .featured-products-carousel .carousel-inner,
+  .featured-products-carousel .carousel-item,
+  .featured-products-carousel .slide-box {
+    height: 300px;
+  }
+
+  .featured-products-carousel .slide-box {
+    gap: 8px;
+    overflow: hidden;
+  }
+
+  .featured-products-carousel .slide-box img {
+    flex: 1 1 0;
+    height: 300px;
+    margin: 0;
+    max-width: none;
+    object-fit: cover;
+    width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .featured-products-carousel .carousel-item,
+  .featured-products-carousel .slide-box {
+    height: 360px;
+  }
+
+  .featured-products-carousel .slide-box img {
+    height: 360px;
+    margin: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+}
 
 .featured-box-content { color: var(--color-ink); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 900; letter-spacing: 6px; line-height: 38px; }
 

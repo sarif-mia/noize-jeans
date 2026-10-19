@@ -55,7 +55,7 @@
     <div class="col-sm-6 order-md-2 design-content">
       <h3 class="design-title">DESIGN STUDIO</h3>
       <div class="embed-responsive embed-responsive-16by9">
-        <iframe width="782" height="400" src="https://www.youtube.com/embed/RklxBCMSGIw" title="Noize Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RklxBCMSGIw" title="Noize Design Studio" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <br>
       <p class="design-copy">Our team of Designers constantly follows the latest fashion trends and translates them into commercial business.</p>

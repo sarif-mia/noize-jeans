@@ -1,78 +1,27 @@
-<!--Header area-->
-<?php $base_path = '../'; include __DIR__ . '/../includes/header.php'; ?>
-<!--/Header area-->
+<?php
+$base_path = '../';
+$customers = [
+    ['bershka.jpg', 'Bershka'], ['zara.jpg', 'Zara'], ['pull-bear.jpg', 'Pull&Bear'], ['mango.jpg', 'Mango'],
+    ['new-york.jpg', 'New York'], ['spring.jpg', 'Springfield'], ['pimkie.jpg', 'Pimkie'], ['jay-jay.jpg', 'Jay Jay'],
+    ['rof.jpg', 'ROF'], ['jj-logo.jpg', 'JJ'], ['only.jpg', 'Only'], ['store-1.png', 'Store'],
+    ['primark.jpg', 'Primark'], ['tally.jpg', 'Tally Weijl'], ['true-religion.jpg', 'True Religion'],
+];
+include __DIR__ . '/../includes/header.php';
+?>
+
 <section class="container-fluid page-banner section-spaced">
-    <div class="row">
-      <div class="col-sm-12">
-        <img src="../assets/images/customers-banner2.jpg" class="img-fluid" alt="Our customers" />
+  <div class="row"><div class="col-sm-12"><img src="../assets/images/customers-banner2.jpg" class="img-fluid" alt="Our customers"></div></div>
+</section>
+
+<section class="container customer-section section-spaced">
+  <h1 class="content-heading content-heading--centered">OUR CUSTOMERS</h1>
+  <div class="row customer-logo-grid">
+    <?php foreach ($customers as [$image, $name]): ?>
+      <div class="col-6 col-md-3 customer-logo">
+        <img src="../assets/images/<?= e($image) ?>" alt="<?= e($name) ?>" class="img-fluid" loading="lazy">
       </div>
-    </div>
-</section>
-
-
-
-
-  <section class="container section-spaced">
-
-  <div class="row image-row">
-    <div class="col">
-      <img src="../assets/images/bershka.jpg" alt="Logo Barshka" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/zara.jpg" alt="Zara" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/pull-bear.jpg" alt="Pull&Bear" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/mango.jpg" alt="Mango" class="img-fluid">
-    </div>
-  </div>
-
-  <div class="row image-row">
-  <div class="col">
-      <img src="../assets/images/new-york.jpg" alt="New York" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/spring.jpg" alt="Spring" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/pimkie.jpg" alt="Primkie" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/jay-jay.jpg" alt="Jay Jay" class="img-fluid">
-    </div>
-    
-  </div>
-
-  <div class="row image-row">
-    <div class="col">
-      <img src="../assets/images/rof.jpg" alt="Rof" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/jj-logo.jpg" alt="Logo 6" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/only.jpg" alt="Only" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/store-1.png" alt="Logo 8" class="img-fluid">
-    </div>
-  </div>
-
-  <div class="row image-row">
-    <div class="col">
-      <img src="../assets/images/primark.jpg" alt="Logo 5" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/tally.jpg" alt="Logo 6" class="img-fluid">
-    </div>
-    <div class="col">
-      <img src="../assets/images/true-religion.jpg" alt="Logo 7" class="img-fluid">
-    </div>
-    
+    <?php endforeach; ?>
   </div>
 </section>
-<!--Footer area-->
+
 <?php include __DIR__ . '/../includes/footer.php'; ?>
-<!--/Footer area-->

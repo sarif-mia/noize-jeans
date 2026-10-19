@@ -11,19 +11,19 @@
 
 <section class="container-fluid">
   <div class="row">
-    <div class="col-md-4 order-1 order-md-1">
+    <div class="col-md-4 order-2 order-md-1">
       <!-- Column 1 content goes here -->
       <div class="image-wrapper">
         <img src="../assets/images/anuragsir5.jpg" alt="Noize Jeans leadership" class="content-image">
       </div>
     </div>
-    <div class="col-md-4 order-3 order-md-2">
+    <div class="col-md-4 order-1 order-md-2">
       <h1 class="content-heading content-heading--centered">CONCEPT NOIZE</h1>
 
       <!-- Column 2 content goes here -->
       <div class="image-wrapper">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/JYZZ9IQFt84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JYZZ9IQFt84" title="Concept Noize" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
       <div class="blog-single-content copy-justified">
@@ -33,7 +33,7 @@
         <p>We are currently one of the most advanced and sustainable production companies in Bangladesh.</p>
       </div>
     </div>
-    <div class="col-md-4 order-2 order-md-3">
+    <div class="col-md-4 order-3 order-md-3">
       <!-- Column 3 content goes here -->
       <div class="image-wrapper">
         <img src="../assets/images/manishsir.jpg" alt="Noize Jeans leadership" class="content-image">

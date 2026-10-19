@@ -1,4 +1,12 @@
-<?php $base_path = ''; include __DIR__ . '/includes/header.php'; ?>
+<?php
+$base_path = '';
+$featured_products = [
+  'DSC_0029.jpg', 'IMG_9756-225x300.jpg', 'IMG_9327.jpg', 'IMG_0581-1-200x300.jpg',
+  'IMG_0425-225x300.jpg', 'IMG_9800-225x300.jpg', 'latest/8.jpg', 'latest/11.jpg',
+  'DSC6562.jpg', 'image00055.jpeg', 'image00085.jpeg', 'image00071.jpeg',
+];
+include __DIR__ . '/includes/header.php';
+?>
     <!--Home Slider-->
     <section>
       <div id="carouselExampleIndicators" class="carousel slide swiper-container" data-ride="carousel">
@@ -22,11 +30,11 @@
             <img src="assets/images/laser.jpg" class="d-block w-100" alt="Slider Image 4">
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<i class="fa fa-chevron-left" aria-hidden="true"></i>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" aria-label="Previous slide">
+			<i class="fa fa-chevron-left" aria-hidden="true"></i><span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<i class="fa fa-chevron-right" aria-hidden="true"></i>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" aria-label="Next slide">
+			<i class="fa fa-chevron-right" aria-hidden="true"></i><span class="sr-only">Next</span>
         </a>
       </div>
     </section>
@@ -35,10 +43,10 @@
     <section class="container">
       <div class="row">
         <div class="col-sm-6 collection-image">
-          <img src="assets/images/desstud-1.jpg" alt="Collection Image 1" class="img-fluid">
+          <a href="design" aria-label="Explore the Noize Design Studio"><img src="assets/images/desstud-1.jpg" alt="Explore the Noize Design Studio" class="img-fluid"></a>
         </div>
         <div class="col-sm-6 collection-image">
-          <img src="assets/images/suspro3.jpg" alt="Collection Image 2" class="img-fluid">
+          <a href="sustainable" aria-label="Explore sustainable production"><img src="assets/images/suspro3.jpg" alt="Explore sustainable production" class="img-fluid"></a>
         </div>
       </div>
     </section>
@@ -54,52 +62,21 @@
         <!-- Carousel Section -->
         <div class="col-sm-8">
           <!-- Carousel Container -->
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel Inner -->
+          <div id="carousel" class="carousel slide featured-products-carousel" data-ride="carousel" data-interval="6000">
             <div class="carousel-inner">
-              <!-- First Slide -->
-              <div class="carousel-item active">
-                <!-- Slide Content Box with 4 images for larger screens -->
-                <div class="slide-box d-none d-sm-flex justify-content-between">
-                  <img src="assets/images/DSC_0029.jpg" alt="First slide">
-                  <img src="assets/images/IMG_9756-225x300.jpg" alt="First slide">
-                  <img src="assets/images/IMG_9327.jpg" alt="First slide">
-                  <img src="assets/images/IMG_0581-1-200x300.jpg" alt="First slide">
+              <?php foreach ($featured_products as $slide_index => $mobile_image): ?>
+                <?php $visible_products = array_map(static fn (int $offset): string => $featured_products[($slide_index + $offset) % count($featured_products)], range(0, 3)); ?>
+                <div class="carousel-item <?= $slide_index === 0 ? 'active' : '' ?>">
+                  <div class="slide-box d-none d-sm-flex">
+                    <?php foreach ($visible_products as $image_index => $image): ?>
+                      <img src="assets/images/<?= e($image) ?>" alt="Featured product <?= $slide_index + $image_index + 1 ?>" loading="lazy">
+                    <?php endforeach; ?>
+                  </div>
+                  <div class="slide-box d-sm-none">
+                    <img src="assets/images/<?= e($mobile_image) ?>" alt="Featured product <?= $slide_index + 1 ?>">
+                  </div>
                 </div>
-                <!-- Slide Content Box with single image for mobile screens -->
-                <div class="slide-box d-sm-none">
-                  <img src="assets/images/DSC_0029.jpg" class="d-block w-100" alt="First slide">
-                </div>
-              </div>
-              <!-- Second Slide -->
-              <div class="carousel-item">
-                <!-- Slide Content Box with 4 images for larger screens -->
-                <div class="slide-box d-none d-sm-flex justify-content-between">
-                  <img src="assets/images/IMG_0425-225x300.jpg" alt="Second slide">
-                  <img src="assets/images/IMG_9800-225x300.jpg" alt="Second slide">
-                  <img src="assets/images/latest/8.jpg" alt="Second slide">
-                  <img src="assets/images/latest/11.jpg" alt="Second slide">
-                </div>
-                <!-- Slide Content Box with single image for mobile screens -->
-                <div class="slide-box d-sm-none">
-                  <img src="assets/images/latest/11.jpg" class="d-block w-100" alt="Second slide">
-                </div>
-              </div>
-              <!-- Third Slide -->
-              <div class="carousel-item">
-                <!-- Slide Content Box with single image for all screen sizes -->
-                <div class="slide-box d-none d-sm-flex justify-content-between">
-                  <img src="assets/images/DSC6562.jpg" class="d-block w-100" alt="Third slide">
-                  <img src="assets/images/image00055.jpeg" class="d-block w-100" alt="Third slide">
-                  <img src="assets/images/image00085.jpeg" class="d-block w-100" alt="Third slide">
-                  <img src="assets/images/image00071.jpeg" class="d-block w-100" alt="Third slide">
-                  <!-- Add more images or content here -->
-                </div>
-                <!-- Slide Content Box with single image for mobile screens -->
-                <div class="slide-box d-sm-none">
-                  <img src="assets/images/image00085.jpeg" class="d-block w-100" alt="Second slide">
-                </div>
-              </div>
+              <?php endforeach; ?>
             </div>
           </div>
           <!-- Carousel Controls -->

@@ -1,6 +1,6 @@
   </main>
 <!-- Footer Section/ Common Item -->
-<section class="container-fluide ">
+<section class="container-fluid">
   <div class="row">
     <div class="col-sm-4 image-with-shadow footer-highlight">
       <img src="<?= $asset('assets/images/complaince-1.jpg') ?>" alt="Noize compliance" class="img-fluid">

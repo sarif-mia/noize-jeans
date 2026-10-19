@@ -19,7 +19,7 @@
     <h1 class="blog-single-content">NOIZE CARE</h1><br>
       <div class="embed-responsive embed-responsive-16by9">
         
-        <p><iframe src="https://www.youtube.com/embed/bWCcOduZS7U?autoplay=1" width="100%" height="285" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p> 
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWCcOduZS7U" title="Noize Care" loading="lazy" allowfullscreen></iframe>
       </div><br>
       <p>Noize Jeans cares about ethical sustainability as much as about its environmental impact. For this reason, we have taken several steps towards better conditions for our employees. Besides providing all necessary factory facilities including safety, better wages and health care, we offer the possibility of children’s daycare for parents during their working hours.</p>
       <p>We believe that our ethical responsibility does not end there. This led us to take an action and help local communities in Dhaka, who have been affected by the covid pandemic. In order to improve the situation, we have distributed the most important goods for people in need. The giveaway included food, clothes, sanitary basics for women.</p>

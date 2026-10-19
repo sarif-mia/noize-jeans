@@ -17,5 +17,9 @@
 .contact-form input,
 .contact-form textarea { margin-bottom: 15px; padding: 10px; width: 100%; }
 .contact-form button { background: #212529; border: 0; color: #fff; cursor: pointer; min-height: 44px; padding: 10px; width: 100px; }
+.contact-alert { margin: 0 0 16px; padding: 12px; }
+.contact-alert--success { background: #d8f3dc; color: #155724; }
+.contact-alert--error { background: #f8d7da; color: #721c24; }
+.contact-honeypot { height: 0; opacity: 0; overflow: hidden; position: absolute; width: 0; }
 
 .document-thumbnail { border: 1px solid #ccc; height: 216px; padding: 5px; width: 180px; }

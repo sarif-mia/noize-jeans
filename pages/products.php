@@ -29,7 +29,7 @@ $collections = [
       <div class="tab-pane fade <?= $key === 'latest' ? 'show active' : '' ?>" id="<?= e($key) ?>" role="tabpanel" aria-labelledby="<?= e($key) ?>-tab">
         <div class="row">
           <?php foreach ($collection['images'] as $index => $image): ?>
-            <div class="col-md-2"><div class="Portfolio"><img class="card-img" src="../assets/images/<?= e($image) ?>" alt="<?= e(ucfirst($key)) ?> collection <?= $index + 1 ?>" loading="lazy"></div></div>
+            <div class="col-6 col-md-2"><div class="Portfolio"><img class="card-img" src="../assets/images/<?= e($image) ?>" alt="<?= e(ucfirst($key)) ?> collection <?= $index + 1 ?>" loading="lazy"></div></div>
           <?php endforeach; ?>
         </div>
       </div>

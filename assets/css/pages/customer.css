@@ -1,0 +1,4 @@
+/* Customer logo grid. */
+.customer-section .content-heading { margin-bottom: 30px; }
+.customer-logo { align-items: center; display: flex; justify-content: center; margin-bottom: 20px; }
+.customer-logo img { max-height: 140px; object-fit: contain; width: 100%; }

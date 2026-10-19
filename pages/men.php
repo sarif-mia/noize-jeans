@@ -11,7 +11,7 @@ include __DIR__ . '/../includes/header.php';
     <h1 class="gallery-heading">Men All Images</h1>
     <div class="row photos">
       <?php foreach ($images as $index => $image): ?>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 item">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-3 item">
           <a href="../assets/images/men/<?= e($image) ?>" data-lightbox="men-collection" data-title="Men collection <?= $index + 1 ?>">
             <img class="img-fluid" src="../assets/images/men/<?= e($image) ?>" alt="Men collection <?= $index + 1 ?>" loading="lazy">
           </a>

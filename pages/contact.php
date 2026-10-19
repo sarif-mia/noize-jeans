@@ -1,5 +1,17 @@
-<!-- Header area -->
-<?php $base_path = '../'; include __DIR__ . '/../includes/header.php'; ?>
+<?php
+require_once __DIR__ . '/../includes/bootstrap.php';
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+
+$_SESSION['contact_csrf'] ??= bin2hex(random_bytes(32));
+$contact_flash = $_SESSION['contact_flash'] ?? null;
+unset($_SESSION['contact_flash']);
+
+$base_path = '../';
+include __DIR__ . '/../includes/header.php';
+?>
 <!-- /Header area -->
 
 
@@ -64,8 +76,13 @@
             <h3>info@noizejeans.com</h3>
             <h3>Leave Message</h3>
         </div>
-            <p>Your email address will not be published. Required fields are marked</p>
-            <form class="contact-form" action="#" method="post">
+            <p>Your email address will not be published. Required fields are marked.</p>
+            <?php if ($contact_flash): ?>
+              <div class="contact-alert contact-alert--<?= e($contact_flash['type']) ?>" role="status" aria-live="polite"><?= e($contact_flash['message']) ?></div>
+            <?php endif; ?>
+            <form class="contact-form" action="../contact-submit.php" method="post">
+                <input type="hidden" name="csrf_token" value="<?= e($_SESSION['contact_csrf']) ?>">
+                <div class="contact-honeypot" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
                 <label for="name">Your Name (required)</label>
                 <input type="text" id="name" name="name" required>
 
@@ -78,7 +95,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
-                <button type="submit">Send SMS</button>
+                <button type="submit">Send Message</button>
             </form>
     </div>
 </section>

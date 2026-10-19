@@ -12,6 +12,14 @@ body { max-width: 100%; overflow-x: hidden; }
 body { color: var(--color-ink); font-family: "Lato", Arial, sans-serif; }
 img { max-width: 100%; }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #4caf50;
+  outline-offset: 3px;
+}
+
 .page-banner,
 .page-banner img,
 .content-image { height: auto; width: 100%; }
