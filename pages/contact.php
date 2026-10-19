@@ -1,27 +1,24 @@
 <!-- Header area -->
-<?php $base_path = '../'; include('../includes/header.php'); ?>
+<?php $base_path = '../'; include __DIR__ . '/../includes/header.php'; ?>
 <!-- /Header area -->
 
 
-<title>Contact Us &#8211; Noize Jeans Ltd.</title>
 
- 
-
-<section class="container-fluid" style="margin-bottom: 50px;">
+<section class="container-fluid page-banner section-spaced">
   <div class="row">
     <div class="col-sm-12">
-    <img src="../assets/images/find-us.jpg" alt="Vertical Production" class="img-fluid"  style="width: 100%; height: auto;" />
+    <img src="../assets/images/find-us.jpg" alt="Find Noize Jeans" class="img-fluid" />
     </div>
   </div>
 </section>
   
 
-<section class="about-section">
+<section class="contact-layout">
   <div class="map-container">
     <!-- Embed Google Maps iframe here with your desired location -->
     <!-- Example: -->
    
-    <iframe src="https://maps.google.com/maps?q=Mika%20Corner%20Stone,%20Dhaka&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://maps.google.com/maps?q=Mika%20Corner%20Stone,%20Dhaka&t=&z=15&ie=UTF8&iwloc=&output=embed" title="Noize Jeans Dhaka location" allowfullscreen loading="lazy"></iframe>
 
   </div>
   
@@ -60,33 +57,32 @@
   </div>
 </section>
 <!-- Contact Form -->
-<div class="section">
-    
-        <div class="column"></div>
-        <div class="column">
+<section class="contact-message-section">
+    <div class="contact-message-spacer"></div>
+    <div class="contact-message-content">
         <div class="information-container">
             <h3>info@noizejeans.com</h3>
             <h3>Leave Message</h3>
         </div>
             <p>Your email address will not be published. Required fields are marked</p>
-            <div class="contact-form">
+            <form class="contact-form" action="#" method="post">
                 <label for="name">Your Name (required)</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Your Email (required)</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="name">Subject:</label>
+                <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
 
                 <button type="submit">Send SMS</button>
-            </div>
-        </div>
+            </form>
     </div>
+</section>
 
     <!--Footer area-->
-<?php include('../includes/footer.php'); ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 <!--/Footer area-->

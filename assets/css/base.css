@@ -1,0 +1,53 @@
+/* Design tokens, resets, and shared content components. */
+:root {
+  --color-black: #000;
+  --color-ink: #242424;
+  --color-muted: #959191;
+  --color-border: #d3d0d0;
+  --space-section: 50px;
+}
+
+html,
+body { max-width: 100%; overflow-x: hidden; }
+body { color: var(--color-ink); font-family: "Lato", Arial, sans-serif; }
+img { max-width: 100%; }
+
+.page-banner,
+.page-banner img,
+.content-image { height: auto; width: 100%; }
+
+.section-spaced { margin-bottom: var(--space-section); }
+.section-top-spaced { margin-top: var(--space-section); }
+.image-frame,
+.image-wrapper { border: 1px solid var(--color-border); padding: 5px; }
+
+.content-heading {
+  color: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  line-height: 1.38;
+}
+
+.content-heading--centered { text-align: center; }
+.content-heading--compact { line-height: 1.1; }
+.copy-justified { line-height: 22px; text-align: justify; }
+.gallery-heading { font-size: 1.5rem; font-weight: 700; text-transform: uppercase; }
+
+.blog-single-content { margin-top: 20px; }
+.blog-single-content h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  line-height: 36px;
+}
+
+.blog-single-content p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  margin: 15px 0;
+}

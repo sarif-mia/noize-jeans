@@ -1,11 +1,4 @@
-<!--Header area--> <?php $base_path = ''; include('includes/header.php'); ?>
-<!--/Header area-->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Noize Jeans Ltd. - Making Noize</title>
-  </head>
-  <body>
+<?php $base_path = ''; include __DIR__ . '/includes/header.php'; ?>
     <!--Home Slider-->
     <section>
       <div id="carouselExampleIndicators" class="carousel slide swiper-container" data-ride="carousel">
@@ -51,7 +44,7 @@
     </section>
     <!-- Collection Box Section End -->
     <!-- Feature Products Section -->
-    <div class="container-fluid" style="margin-top: 50px;">
+    <div class="container-fluid section-top-spaced">
       <div class="row">
         <!-- Heading Section -->
         <div class="col-sm-4 d-flex align-items-center justify-content-center">
@@ -143,7 +136,5 @@
     <!-- Footer Section/ Brand logo End-->
 
     <!--Footer area--> 
-      <?php include('includes/footer.php'); ?>
+      <?php include __DIR__ . '/includes/footer.php'; ?>
     <!--/Footer area-->
-  </body>
-</html>

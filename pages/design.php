@@ -1,7 +1,6 @@
 <!-- Header area -->
-<?php $base_path = '../'; include('../includes/header.php'); ?>
+<?php $base_path = '../'; include __DIR__ . '/../includes/header.php'; ?>
 <!-- /Header area -->
-<title>Design Studio &#8211; Noize Jeans Ltd.</title>
 <!-- Home Slider -->
 <section>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -42,28 +41,28 @@
 <!-- Images & Video -->
 <section class="container-fluid">
   <div class="row">
-    <div class="col-sm-6 order-md-1" style="margin-top: 30px;">
+    <div class="col-sm-6 order-md-1 design-content">
       <!-- Add border styling to the image container -->
-      <div style="padding: 10px;">
+      <div class="design-images">
       
         <img src="../assets/images/ds1.jpg" alt="Picture" class="img-fluid">
-		<img src="../assets/images/ds2.jpg" alt="Picture-2" class="img-fluid"style="margin-top: 30px;">
+		<img src="../assets/images/ds2.jpg" alt="Design samples" class="img-fluid">
      
       </div>
     </div>
     
 
-    <div class="col-sm-6 order-md-2" style="margin-top: 30px;">
-      <h3 style="font-family:inherit; font-weight: 500;font-size: 2em;">DESIGN STUDIO</h3>
+    <div class="col-sm-6 order-md-2 design-content">
+      <h3 class="design-title">DESIGN STUDIO</h3>
       <div class="embed-responsive embed-responsive-16by9">
         <iframe width="782" height="400" src="https://www.youtube.com/embed/RklxBCMSGIw" title="Noize Products" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
       <br>
-      <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143;">Our team of Designers constantly follows the latest fashion trends and translates them into commercial business.</p>
-      <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143;">Following the same approach, we prepare our collection by choosing the right fabrics and techniques.
+      <p class="design-copy">Our team of Designers constantly follows the latest fashion trends and translates them into commercial business.</p>
+      <p class="design-copy">Following the same approach, we prepare our collection by choosing the right fabrics and techniques.
         We aim to find the best in every personality and match it with the uniqueness of each brand we work with.</p>
 
-      <p style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143;">We present our collection to customers six times a year, reducing their workload and time.
+      <p class="design-copy">We present our collection to customers six times a year, reducing their workload and time.
         Our design team continuously provides complete design solutions.</p>
     </div>
   </div>
@@ -92,5 +91,5 @@
 
 
 <!-- Footer area -->
-<?php include('../includes/footer.php'); ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 <!-- /Footer area -->

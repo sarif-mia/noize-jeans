@@ -1,12 +1,10 @@
 <!--Header area-->
-<?php $base_path = '../'; include('../includes/header.php'); ?>
+<?php $base_path = '../'; include __DIR__ . '/../includes/header.php'; ?>
 <!--/Header area-->
-<title>Customers &#8211; Noize Jeans Ltd.</title>
-
-<section class="container-fluid" style="margin-bottom: 50px;">
+<section class="container-fluid page-banner section-spaced">
     <div class="row">
       <div class="col-sm-12">
-        <img src="../assets/images/customers-banner2.jpg" class="img-fluid" alt="Customer"  style="width: 100%; height: auto;" />
+        <img src="../assets/images/customers-banner2.jpg" class="img-fluid" alt="Our customers" />
       </div>
     </div>
 </section>
@@ -14,7 +12,7 @@
 
 
 
-  <section class="container" style="margin-bottom: 50px;">
+  <section class="container section-spaced">
 
   <div class="row image-row">
     <div class="col">
@@ -76,6 +74,5 @@
   </div>
 </section>
 <!--Footer area-->
-<?php include('../includes/footer.php'); ?>
+<?php include __DIR__ . '/../includes/footer.php'; ?>
 <!--/Footer area-->
-

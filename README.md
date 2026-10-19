@@ -10,6 +10,7 @@ The project has been organized into a clean, maintainable folder structure:
 noize/
 ├── index.php                 # Homepage (root level)
 ├── includes/                 # Reusable components
+│   ├── bootstrap.php         # Shared constants and view helpers
 │   ├── header.php           # Header navigation and styles
 │   └── footer.php           # Footer section
 ├── pages/                    # Individual page files
@@ -29,6 +30,7 @@ noize/
 │       ├── men/
 │       └── women/
 ├── document/                 # Documentation files
+├── router.php               # Router for PHP's built-in development server
 ├── Dockerfile               # Docker configuration
 └── docker-compose.yml       # Docker Compose setup
 ```
@@ -54,9 +56,19 @@ The site will be accessible at `http://localhost:8080`
 
 ## Development
 
-- All page files should include header/footer using the pattern shown in existing files
-- Images should be referenced using the `$base_path` variable: `<?php echo $base_path; ?>assets/images/filename.jpg`
-- Navigation links in header.php automatically adjust based on the `$base_path` variable
+- All page files include the shared header and footer components.
+- Use `asset_url()` and `e()` from `includes/bootstrap.php` whenever outputting dynamic paths or text.
+- Product collections and galleries are data-driven to avoid repeated markup.
+
+### PHP built-in server
+
+For local development without Docker, start PHP with the included router so clean URLs such as `/about` and `/products` work:
+
+```bash
+php -S localhost:8080 router.php
+```
+
+Open `http://localhost:8080` in your browser.
 
 ## Features
 

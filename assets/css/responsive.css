@@ -1,0 +1,46 @@
+/* Breakpoint-specific overrides shared by all pages. */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img { flex: 0 0 50%; max-width: 50%; }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img { flex: 0 0 33.3333%; max-width: 33.3333%; }
+}
+
+@media (min-width: 992px) {
+  .slide-box img { flex: 0 0 25%; max-width: 25%; }
+}
+
+@media (max-width: 767.98px) {
+  :root { --space-section: 32px; }
+
+  .menu__btn { left: 20px; }
+  .menu__box { max-width: calc(100vw - 20px); }
+  .line-logo { height: auto; width: 150px; }
+  .collection-image img { padding-top: 15px; }
+  .featured-box-content { font-size: 26px; letter-spacing: 3px; line-height: 1.2; margin: 24px 0; }
+  .carousel-control-next,
+  .carousel-control-prev { font-size: 1em; width: 7.5%; }
+
+  .nav.nav-pills { align-items: center; flex-wrap: wrap; padding: 10px 0; }
+  .nav.nav-pills .nav-item { margin: 4px; }
+  .nav.nav-pills .nav-link { font-size: 13px; margin: 0; padding: 10px 12px; }
+  .Portfolio { max-width: 100%; width: auto; }
+  .Portfolio img { height: auto; }
+
+  .contact-layout { display: block; padding: 15px; }
+  .contact-layout .map-container,
+  .contact-layout .information-container { width: 100%; }
+  .contact-layout .information-container { margin-top: 28px; }
+  .map-container iframe { height: 300px; width: 100%; }
+  .information-container { letter-spacing: 1.5px; overflow-wrap: anywhere; }
+  .information-container h2 { font-size: 24px; line-height: 1.25; overflow-wrap: anywhere; }
+  .contact-message-section { display: block; padding: 15px; }
+  .contact-message-spacer { display: none; }
+  .contact-form button { width: 100%; }
+
+  .footer-logo { margin-top: 20px; padding-left: 0; }
+  .image-with-shadow img,
+  .second-image { padding: 24px; }
+  .document-thumbnail { height: auto; max-width: 100%; }
+}

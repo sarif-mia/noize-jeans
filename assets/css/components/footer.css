@@ -1,0 +1,13 @@
+/* Reusable footer and compliance image section. */
+.footer { background: var(--color-black); color: #fff; padding: 35px 10px; }
+.custom-font p { font-family: sans-serif; font-size: 13px; letter-spacing: 2px; line-height: 2.42857143; }
+.custom-font h3 { color: #fff; font-size: 14px; font-weight: 900; letter-spacing: 2px; margin-bottom: 45px; }
+.footer-highlight { padding-top: 50px; }
+.second-image { background: var(--color-black); padding: 40px; text-align: center; }
+.second-image img { height: auto; max-width: 100%; width: auto; }
+.image-with-shadow { box-shadow: 0 0 10px rgb(207 207 207 / 50%); }
+.image-with-shadow img { height: auto; padding: 40px; width: 100%; }
+.footer-logo { margin-top: 65px; padding-left: 30px; width: auto; }
+.footer-link,
+.copy-right p { color: var(--color-muted); }
+.horizontal-line { background: #333; }

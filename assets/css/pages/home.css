@@ -1,0 +1,31 @@
+/* Homepage carousels, image cards, and partner logo strip. */
+.collection-image { overflow: hidden; transition: transform .3s; }
+.collection-image:hover { transform: scale(1.03); }
+.collection-image img { height: auto; padding-top: 30px; width: 100%; }
+
+.carousel { width: 100%; }
+.carousel-control-next,
+.carousel-control-prev { background: var(--color-black); font-size: 2em; height: 50px; top: 50%; transform: translateY(-50%); width: 3.5%; z-index: 1; }
+.slide-box { display: flex; justify-content: space-between; }
+.slide-box img { margin-right: 5px; }
+
+.featured-box-content { color: var(--color-ink); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 900; letter-spacing: 6px; line-height: 38px; }
+
+.brand-logos { align-items: center; background: #fff; display: flex; height: 200px; justify-content: center; overflow: hidden; }
+.brand-logo-row { align-items: center; display: flex; margin-top: 20px; }
+.brand-logos img { animation: slideAnimation 25s infinite; height: auto; margin: 10px; max-width: 100%; }
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(-500%); }
+}
+
+.design-content { margin-top: 30px; }
+.design-images { padding: 10px; }
+.design-images img + img { margin-top: 30px; }
+.design-title { font-family: inherit; font-size: 2em; font-weight: 500; }
+.design-copy { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; }
