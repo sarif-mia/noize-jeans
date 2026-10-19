@@ -14,7 +14,7 @@
   </div>
 </section>
 
-<div class="container-fluid section-spaced">
+<section class="site-container section-spaced">
         <div class="row">
             <!-- 1st Column Images -->
             <div class="col-sm-6 col-12">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
 <!-- Footer area -->
 <?php include __DIR__ . '/../includes/footer.php'; ?>

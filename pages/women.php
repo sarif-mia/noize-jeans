@@ -7,7 +7,7 @@ include __DIR__ . '/../includes/header.php';
 ?>
 
 <section class="photo-gallery section-spaced">
-  <div class="container">
+  <div class="site-container">
     <h1 class="gallery-heading">Women All Images</h1>
     <div class="row photos">
       <?php foreach ($images as $index => $image): ?>

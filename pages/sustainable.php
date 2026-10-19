@@ -11,7 +11,7 @@
 </section>
 
 
-<div class="container-fluid">
+<section class="site-container section-spaced">
   <div class="row">
     <div class="col-md-4">
       <img src="../assets/images/sustainability2.jpg" alt="Picture" class="img-fluid">
@@ -25,9 +25,9 @@
       <p>We are very proud of what we have accomplished so far, and by continuing our practical approach to sustainability, we will take further steps to maintain our leading position in the denim industry. In the coming years, focus will be to produce with zero carbon footprints and to take an active part in working towards a more sustainable society.</p>
     </div>
   </div>
-</div>
+</section>
 <!-- Office document section area -->
-<section class="container-fluid section-spaced">
+<section class="site-container section-spaced">
   <div class="row">
     <div class="col-md-8 offset-md-4">
       <h3 class="font-weight-bold">Machines Brands:</h3>

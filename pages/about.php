@@ -9,7 +9,7 @@
   </div>
 </section>
 
-<section class="container-fluid">
+<section class="site-container section-spaced">
   <div class="row">
     <div class="col-md-4 order-2 order-md-1">
       <!-- Column 1 content goes here -->

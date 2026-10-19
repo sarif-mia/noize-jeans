@@ -13,7 +13,7 @@ $collections = [
   <div class="row"><div class="col-sm-12"><img src="../assets/images/products-3.jpg" alt="Noize Jeans products" class="img-fluid"></div></div>
 </section>
 
-<section class="container-fluid">
+<section class="site-container">
   <h1 class="text-center">CATEGORIES</h1>
   <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
     <?php foreach ($collections as $key => $collection): ?>
@@ -23,7 +23,7 @@ $collections = [
   <hr class="mt-0">
 </section>
 
-<section class="container">
+<section class="site-container">
   <div class="tab-content" id="pills-tabContent">
     <?php foreach ($collections as $key => $collection): ?>
       <div class="tab-pane fade <?= $key === 'latest' ? 'show active' : '' ?>" id="<?= e($key) ?>" role="tabpanel" aria-labelledby="<?= e($key) ?>-tab">

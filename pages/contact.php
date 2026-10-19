@@ -25,7 +25,7 @@ include __DIR__ . '/../includes/header.php';
 </section>
   
 
-<section class="contact-layout">
+<section class="site-container contact-layout">
   <div class="map-container">
     <!-- Embed Google Maps iframe here with your desired location -->
     <!-- Example: -->
@@ -69,7 +69,7 @@ include __DIR__ . '/../includes/header.php';
   </div>
 </section>
 <!-- Contact Form -->
-<section class="contact-message-section">
+<section class="site-container contact-message-section section-spaced">
     <div class="contact-message-spacer"></div>
     <div class="contact-message-content">
         <div class="information-container">

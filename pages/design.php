@@ -39,7 +39,7 @@
   </div>
 </section>
 <!-- Images & Video -->
-<section class="container-fluid">
+<section class="site-container section-spaced">
   <div class="row">
     <div class="col-sm-6 order-md-1 design-content">
       <!-- Add border styling to the image container -->

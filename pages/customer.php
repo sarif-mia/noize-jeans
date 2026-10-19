@@ -13,7 +13,7 @@ include __DIR__ . '/../includes/header.php';
   <div class="row"><div class="col-sm-12"><img src="../assets/images/customers-banner2.jpg" class="img-fluid" alt="Our customers"></div></div>
 </section>
 
-<section class="container customer-section section-spaced">
+<section class="site-container customer-section section-spaced">
   <h1 class="content-heading content-heading--centered">OUR CUSTOMERS</h1>
   <div class="row customer-logo-grid">
     <?php foreach ($customers as [$image, $name]): ?>

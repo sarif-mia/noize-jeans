@@ -40,7 +40,7 @@ include __DIR__ . '/includes/header.php';
     </section>
     <!-- Home Slider End -->
     <!-- Collection Box Section -->
-    <section class="container">
+    <section class="site-container">
       <div class="row">
         <div class="col-sm-6 collection-image">
           <a href="design" aria-label="Explore the Noize Design Studio"><img src="assets/images/desstud-1.jpg" alt="Explore the Noize Design Studio" class="img-fluid"></a>
@@ -52,7 +52,7 @@ include __DIR__ . '/includes/header.php';
     </section>
     <!-- Collection Box Section End -->
     <!-- Feature Products Section -->
-    <div class="container-fluid section-top-spaced">
+    <div class="site-container section-top-spaced">
       <div class="row">
         <!-- Heading Section -->
         <div class="col-sm-4 d-flex align-items-center justify-content-center">

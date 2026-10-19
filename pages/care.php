@@ -10,7 +10,7 @@
   </div>
 </section>
 
-<div class="container-fluid">
+<section class="site-container section-spaced">
   <div class="row">
     <div class="col-sm-6">
       <img src="../assets/images/noize-care-1.jpg" alt="Picture" class="img-fluid">
@@ -26,7 +26,7 @@
       <p>Since our mission is to be also ethically conscious company, we keep developing this concept and focus on areas where help is needed the most.</p>
     </div>
   </div>
-</div>
+</section>
 
 <!--Footer area-->
 <?php include __DIR__ . '/../includes/footer.php'; ?>
