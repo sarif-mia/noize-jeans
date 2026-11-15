@@ -1,91 +1,82 @@
-"# Noize Jeans Ltd - Website
+# Noize Jeans Ltd. — Website
 
-This is the official website for Noize Jeans Ltd., a sustainable denim production company.
+Official website for Noize Jeans Ltd., a sustainable denim production company.
 
-## Project Structure
+Built with **Next.js 16** (App Router, Cache Components), **React 19**, **TypeScript** and **Tailwind CSS v4**.
+Every page is prerendered as static HTML. Images are served through `next/image` (AVIF/WebP, responsive sizes, lazy loading).
 
-The project has been organized into a clean, maintainable folder structure:
-
-```
-noize/
-├── index.php                 # Homepage (root level)
-├── includes/                 # Reusable components
-│   ├── bootstrap.php         # Shared constants and view helpers
-│   ├── header.php           # Header navigation and styles
-│   └── footer.php           # Footer section
-├── pages/                    # Individual page files
-│   ├── about.php
-│   ├── care.php
-│   ├── contact.php
-│   ├── customer.php
-│   ├── design.php
-│   ├── men.php
-│   ├── production.php
-│   ├── products.php
-│   ├── sustainable.php
-│   └── women.php
-├── assets/                   # Static resources
-│   └── images/              # All image files
-│       ├── latest/
-│       ├── men/
-│       └── women/
-├── document/                 # Documentation files
-├── router.php               # Router for PHP's built-in development server
-├── Dockerfile               # Docker configuration
-└── docker-compose.yml       # Docker Compose setup
-```
-
-## Path Configuration
-
-The project uses a `$base_path` variable to handle relative paths correctly:
-
-- **Root level files** (index.php): Set `$base_path = ''`
-- **Page files** (pages/*.php): Set `$base_path = '../'`
-
-This ensures all links and resources load correctly regardless of the file location.
-
-## Docker Setup
-
-Run the application using Docker:
+## Getting started
 
 ```bash
-docker-compose up -d
+npm install
+npm run dev        # http://localhost:3000
 ```
 
-The site will be accessible at `http://localhost:8080`
+Other scripts:
 
-## Development
+| Command         | What it does                         |
+| --------------- | ------------------------------------ |
+| `npm run build` | Production build (standalone output) |
+| `npm start`     | Serve the production build           |
+| `npm run lint`  | ESLint                               |
 
-- All page files include the shared header and footer components.
-- Use `asset_url()` and `e()` from `includes/bootstrap.php` whenever outputting dynamic paths or text.
-- Product collections and galleries are data-driven to avoid repeated markup.
+## Project structure
 
-### PHP built-in server
+```
+app/
+├── layout.tsx            # <html>, fonts, metadata, header + footer
+├── globals.css           # Tailwind theme (Bootstrap-matching breakpoints, colours, animations)
+├── page.tsx              # Home
+├── about/ care/ customer/ design/ production/ sustainable/
+├── products/             # Category tabs (Latest / Men / Women)
+├── men/ women/           # Full galleries with lightbox (read from public/images/men|women)
+├── contact/
+│   ├── page.tsx
+│   ├── contact-form.tsx  # Client form (useActionState)
+│   └── actions.ts        # Server Action: validation (zod), honeypot, SMTP via nodemailer
+├── not-found.tsx
+├── sitemap.ts / robots.ts
+components/               # Header, footer, carousel, product tabs, gallery, shared content blocks
+lib/
+├── site.ts               # All site content: nav, offices, phones, brands, customers, product lists
+└── images.ts             # Reads image sizes from /public at build time (no layout shift)
+public/
+├── images/               # All photos and logos
+└── documents/            # Downloadable PDF profiles
+```
 
-For local development without Docker, start PHP with the included router so clean URLs such as `/about` and `/products` work:
+### Editing content
+
+- Navigation, office addresses, phone numbers, brand/customer logos, featured and product images: **`lib/site.ts`**.
+- Men/Women galleries pick up every image in `public/images/men` and `public/images/women` automatically.
+- Use `img("file.jpg", "alt text")` from `lib/images.ts` with the `<Picture>` component for new images.
+
+## Contact form email
+
+The form posts to a Server Action that sends mail over SMTP. Copy `.env.example` to `.env` and fill in:
 
 ```bash
-php -S localhost:8080 router.php
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_SECURE=false
+SMTP_USER=...
+SMTP_PASS=...
+CONTACT_TO=info@noizejeans.com
+CONTACT_FROM=noreply@noizejeans.com
 ```
 
-Open `http://localhost:8080` in your browser.
+Without `SMTP_HOST`, the form shows an error and points visitors to the company email address.
 
-### Contact form email
+## Deployment
 
-The contact form uses PHP's `mail()` function. Configure a mail transport on the production server, then optionally set these environment variables:
+**Vercel:** import the repo; set the SMTP variables in the project settings.
+
+**Docker:**
 
 ```bash
-NOIZE_CONTACT_TO=info@noizejeans.com
-NOIZE_CONTACT_FROM=noreply@your-domain.com
+docker compose up -d --build   # http://localhost:8080
 ```
 
-Without a configured mail transport, the form displays an error and provides the direct company email address.
+The image uses Next.js standalone output on `node:24-alpine`; it reads SMTP settings from `.env` if present.
 
-## Features
-
-- Responsive design with Bootstrap 4
-- Mobile-friendly hamburger menu
-- Image carousels and galleries
-- Sustainable production information
-- Product catalogs for men and women
-- Company information and contact details
+Old PHP-era URLs (`/about.php`, `/pages/care.php`, `/document/*.pdf`, `/assets/images/*`) permanently redirect to their new locations.

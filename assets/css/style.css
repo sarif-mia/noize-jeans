@@ -1,9 +1,0 @@
-/* Noize Jeans stylesheet entry point. Load order is intentional. */
-@import url("base.css");
-@import url("components/header.css");
-@import url("components/footer.css");
-@import url("pages/home.css");
-@import url("pages/products.css");
-@import url("pages/contact.css");
-@import url("pages/customer.css");
-@import url("responsive.css");

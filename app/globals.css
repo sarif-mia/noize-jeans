@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* Breakpoints match Bootstrap 4 so layouts behave exactly like the original site. */
+@theme {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+  --color-ink: #242424;
+  --color-muted: #959191;
+  --color-line: #d3d0d0;
+  --color-accent: #4caf50;
+  --color-primary: #007bff;
+
+  --font-sans: var(--font-lato), Arial, sans-serif;
+  --font-helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --animate-portfolio-in: portfolio-in 0.5s;
+  --animate-brand-slide: brand-slide 25s infinite;
+
+  @keyframes portfolio-in {
+    0% { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+    50% { opacity: 1; }
+  }
+
+  @keyframes brand-slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+  }
+}
+
+:root {
+  --header-height: 60px;
+  --space-section: 50px;
+}
+
+@media (max-width: 767.98px) {
+  :root { --space-section: 32px; }
+}
+
+/* Bootstrap-like typography defaults that the original design relied on. */
+@layer base {
+  html, body { max-width: 100%; overflow-x: hidden; }
+
+  body {
+    background: #fff;
+    color: var(--color-ink);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 { font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; }
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+  h4 { font-size: 1.5rem; }
+  p { margin-bottom: 1rem; }
+  strong { font-weight: bolder; }
+  hr { border-top: 1px solid rgb(0 0 0 / 10%); margin-block: 1rem; }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+}
+
+/* Small shared content patterns reused across pages. */
+@layer components {
+  .content-heading {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 6px;
+    line-height: 1.38;
+  }
+
+  .prose-noize p {
+    font-family: var(--font-helvetica);
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 22px;
+    margin: 15px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

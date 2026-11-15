@@ -1,14 +1,27 @@
-FROM php:8.3-apache
+# syntax=docker/dockerfile:1
 
-# Enable useful Apache modules
-RUN a2enmod rewrite
+FROM node:24-alpine AS deps
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm ci
 
-# Copy application source into the Apache document root
-COPY . /var/www/html/
+FROM node:24-alpine AS builder
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+RUN npm run build
 
-# Set permissions for the web user
-RUN chown -R www-data:www-data /var/www/html
-
-EXPOSE 80
-
-# Apache is the default CMD in this image
+FROM node:24-alpine AS runner
+WORKDIR /app
+ENV NODE_ENV=production \
+    NEXT_TELEMETRY_DISABLED=1 \
+    PORT=3000 \
+    HOSTNAME=0.0.0.0
+RUN addgroup -S nodejs && adduser -S nextjs -G nodejs
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+USER nextjs
+EXPOSE 3000
+CMD ["node", "server.js"]

@@ -1,14 +1,9 @@
-# VCS
 .git
-.gitignore
-
-# Node / Composer (if present)
+.next
 node_modules
-vendor
-composer.lock
-composer.json
-
-# Docker / misc
+npm-debug.log*
+.env*
+!.env.example
 Dockerfile
 docker-compose.yml
 .DS_Store
